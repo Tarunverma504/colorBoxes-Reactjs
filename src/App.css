@@ -1,7 +1,25 @@
 .App {
   text-align: center;
 }
-
+.conatiner{
+  margin:auto;
+  width:95%;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+}
+.item{
+  border: 1px solid black;
+  height:200px;
+  cursor:pointer;
+}
+.text{
+  position: absolute;
+  margin-top: 12vh;
+  margin-left:8%;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

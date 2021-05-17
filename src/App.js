@@ -1,25 +1,28 @@
+import {useState} from "react";
 import logo from './logo.svg';
 import './App.css';
-
+import Boxes from "./Boxes.js";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  var i;
+ var arr=[];
+ const a= function(){
+    for(var i=0;i<12;i++){
+      arr.push( <Boxes key={i} />)
+    }
+    return arr;
+  }
+  return(
+        <>
+        <h1 style={{textAlign:"center",color:"white",fontSize:"40px"}}>Color Boxes</h1>
+          <div className="conatiner">
+        <div className="grid-container">
+          {a()}
+      </div>
     </div>
-  );
+    
+      </>
+  )
 }
+
 
 export default App;
