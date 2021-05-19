@@ -7,11 +7,15 @@ export default function Boxes(){
     useEffect(()=>{
         changeColor();
     });
+    
+    
     function changeColor(){
         let a=Math.floor(Math.random() * allcolor.length);
        setColor(allcolor[a]);
 
     }
+    
+    
     return(
         <div className="item" style={{backgroundColor:color}} onClick={changeColor}> <span className="text" > <b> Click Me! </b></span></div>
     )
