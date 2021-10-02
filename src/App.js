@@ -12,7 +12,7 @@ function App() {
     return arr;
   }
   return(
-        <>
+        <React.Fragement>
         <h1 style={{textAlign:"center",color:"white",fontSize:"40px"}}>Color Boxes</h1>
           <div className="conatiner">
         <div className="grid-container">
@@ -20,7 +20,7 @@ function App() {
       </div>
     </div>
     
-      </>
+      </React.Fragement>
   )
 }
 
